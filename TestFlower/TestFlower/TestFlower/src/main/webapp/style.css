@@ -1,0 +1,481 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 12, 2023, 11:54:46 PM
+    Author     : MSI GTX
+*/
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header img {
+    display: flex;
+    width: 120px;
+    border-radius: 20%;
+}
+
+.logo {
+    margin: auto;
+}
+
+.cart {
+    margin-left: auto;
+}
+
+.search {
+    margin: auto;
+}
+
+.search input {
+    border: 2px solid black;
+    font-size: 20px;
+    min-width: 500px;
+}
+
+.search button {
+    border: 2px solid black;
+    font-size: 20px;
+    color: black;
+}
+
+/*menu*/
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/*=================================================================================*/
+/* CSS cho dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 2px 9px 0px rgba(82, 81, 81, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 20px 5px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbtn a {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*=================================================================================*/
+/* CSS của phần banner*/
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/*hình ảnh chuyển động*/
+.banner.active {
+    opacity: 1;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+.row,
+.gallery {
+    width: 100%;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+body {
+    color: #221a1a;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+/* phần nội dung */
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-inner {
+    position: relative;
+    background-color: #fafafa;
+    margin: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+    overflow: hidden;
+    width: 85%;
+    text-align: center;
+    padding: 10px;
+}
+
+.image_fade_in_back img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-title a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: red;
+    font-size: 20px;
+}
+
+.add-to-cart-button {
+    margin-top: 20px;
+}
+
+.add-to-cart-button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 4px solid red;
+    background-color: red;
+}
+/*=============*/
+
+.shop-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introduct {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto; /* căn giữa theo chiều ngang */
+    text-align: justify; /* căn đều nội dung theo chiều ngang */
+    max-width: 1200px; /* giới hạn chiều rộng của phần tử */
+}
+
+
+/*===========================
+/*trang chi tiết*/
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và chữ */
+}
+
+.titleproduct {
+    list-style: none;
+}
+
+.titleproduct li {
+    display: flex;
+    align-items: center;
+}
+.quantityproduct {
+    margin-right: 5px;
+
+}
+
+/*========================
+/* chuyen trang*/
+.container-123 {
+    text-align: center; /* Canh giữa các phần tử trong container */
+}
+
+ul.pagination {
+    list-style: none; /* Bỏ dấu đầu dòng của danh sách */
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline-block;
+    margin-right: 5px; /* Khoảng cách giữa các phần tử */
+}
+
+ul.pagination li a {
+    display: block;
+    padding: 5px 10px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.pagination li a:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+
+
+/*=================================================================================*/
+/* CSS của Footer*/
+/* Footer */
+footer .back-ground {
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/474x/92/f0/31/92f0311ef7bccee25e2a29a3268cc9ba.jpg");
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*===========================================*/
+/*Chia bố cục*/
+.inner-content {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.ft-contact,
+.quick-links,
+.newsletter,
+.information {
+    flex-basis: 25%;
+}
+
+/*===========================================*/
+/*Chỉnh sửa icon của phần contact address*/
+.ft-contact {
+    padding: 10px;
+}
+
+.ft-contact-address {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 5px 2px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img:hover {
+    filter: brightness(110%);
+}
+
+/*===========================================*/
+/*Chỉnh sửa icon của phần contact telephone*/
+.ft-contact-tele a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ft-contact-tele a:hover {
+    color: pink;
+
+}
+
+/*===========================================*/
+/*Chỉnh sửa quick-link*/
+.quick-links {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.quick-links h2 {
+    text-align: justify;
+    margin-left: 40px;
+}
+
+.quick-links-address {
+    text-align: justify;
+}
+
+ul.quick-links-address li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+ul.quick-links-address li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.quick-links-address li a:hover {
+    color: pink;
+}
+
+/*===========================================*/
+/*Chỉnh sửa information*/
+.information {
+    padding: 10px;
+    text-align: left;
+}
+
+.information h2 {
+    text-align: justify;
+    margin-left: 40px;
+}
+
+.information-address {
+    text-align: justify;
+}
+
+ul.information-address li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+ul.information-address li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.information-address li a:hover {
+    color: pink;
+}
+
+/*===========================================*/
+/*Chỉnh sửa newsletter*/
+.newsletter {
+    padding: 10px;
+}
+
+.newsletter p {
+    text-align: justify;
+    font-size: 100%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="image"] {
+    width: 30px;
+    /* Độ rộng của hình ảnh */
+    height: 30px;
+    /* Chiều cao của hình ảnh */
+    border: none;
+    /* Xóa viền */
+    background-color: transparent;
+    /* Màu nền trong suốt */
+    cursor: pointer;
+    /* Đổi con trỏ chuột thành hình bàn tay khi hover */
+}
+
+input[type="image"]:hover {
+    filter: brightness(110%);
+    /* Tăng độ đậm khi hover */
+}
+/*thẻ chuyển trang*/
+.page-numbers {
+    margin: 5px 0;
+    font-size: .85em;
+}
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
